@@ -13,22 +13,23 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
       <section class="signup">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Illustrations of dashboards and random data"
+            class="signup__image"
+          />
+        </picture>
         <div class="signup__hero">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/images/illustration-sign-up-desktop.svg"
-            />
-            <img
-              src="./assets/images/illustration-sign-up-mobile.svg"
-              alt="Illustrations of dashboards and random data"
-              class="signup__image"
-            />
-          </picture>
           <h1 class="signup__heading">Stay updated!</h1>
           <p class="signup__description">
             Join 60,000+ product managers receiving monthly updates on:
@@ -43,25 +44,27 @@
             <li class="signup__item">And much more!</li>
           </ul>
         </div>
-        <form class="signup__form" novalidate>
+        <form class="signup__form" id="signup-form" novalidate>
           <div class="signup__form-group">
             <label for="email" class="signup__label">Email address</label>
             <span
               id="email-error"
               class="signup__error hidden"
               aria-live="polite"
-            ></span>
+              >Valid email required</span
+            >
             <input
               type="email"
               name="email"
               id="email"
-              value="email@company.com"
+              placeholder="email@company.com"
+              value=""
               class="signup__input"
               aria-required="true"
               aria-describedby="email-error"
             />
           </div>
-          <button type="submit" class="signup__button">
+          <button type="submit" class="signup__button" id="submit-btn">
             Subscribe to monthly newsletter
           </button>
         </form>
@@ -87,7 +90,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://www.github.com/kmulqueen">Kyle Mulqueen</a>.
     </footer>
   </body>
 </html>
