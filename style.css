@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-grey: hsl(0, 0%, 58%);
+  --clr-blue-700: hsl(235, 18%, 26%);
+  --clr-blue-800: hsl(234, 29%, 20%);
+  --clr-red: hsl(4, 100%, 67%);
+  --clr-gradient: linear-gradient(hsl(15, 100%, 61%), hsl(346, 200%, 66%));
+
+  --fs-xl: 3.5rem;
+  --fs-l: 2.5rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.75rem;
+
+  --lh-reg: 1;
+  --lh-lg: 1.5;
+
+  --spc-100: 0.5rem;
+  --spc-200: 1rem;
+  --spc-300: 1.5rem;
+  --spc-400: 2rem;
+  --spc-500: 2.5rem;
+  --spc-600: 3rem;
+  --spc-800: 4rem;
+  --spc-900: 4.5rem;
+  --spc-1300: 6.5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
