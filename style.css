@@ -20,10 +20,11 @@
   --clr-red-400: hsl(4, 100%, 67%);
   --clr-gradient: linear-gradient(hsl(15, 100%, 61%), hsl(346, 200%, 66%));
 
-  --fs-xl: 3.5rem;
-  --fs-l: 2.5rem;
-  --fs-md: 1rem;
-  --fs-sm: 0.75rem;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-700: 2.5rem;
+  --fs-900: 3.5rem;
 
   --lh-reg: 1;
   --lh-lg: 1.5;
@@ -36,6 +37,7 @@
   --spc-600: 3rem;
   --spc-800: 4rem;
   --spc-900: 4.5rem;
+  --spc-1000: 5rem;
   --spc-1300: 6.5rem;
 }
 
@@ -91,7 +93,7 @@ picture {
 }
 
 .signup__heading {
-  font-size: var(--fs-l);
+  font-size: var(--fs-700);
   font-weight: bold;
 }
 
@@ -145,7 +147,7 @@ picture {
 
 .signup__label,
 .signup__error {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-300);
   font-weight: bold;
   line-height: var(--lh-lg);
 }
@@ -181,7 +183,7 @@ picture {
   padding: var(--spc-200) var(--spc-600);
   border: none;
   border-radius: var(--spc-100);
-  font-size: var(--fs-md);
+  font-size: var(--fs-400);
   text-wrap: nowrap;
   cursor: pointer;
 }
@@ -193,4 +195,46 @@ picture {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--clr-blue-700);
+  }
+
+  main {
+    padding: var(--spc-1000);
+  }
+
+  .signup {
+    background-color: var(--clr-white);
+    max-width: 38rem;
+    padding: var(--spc-500);
+    border-radius: var(--spc-400);
+  }
+
+  .signup__hero {
+    padding: 0 0 var(--spc-300);
+  }
+
+  .signup__heading {
+    font-size: var(--fs-900);
+  }
+
+  .signup__item {
+    margin-bottom: var(--spc-100);
+  }
+
+  .signup__form {
+    gap: var(--spc-200);
+    padding: 0;
+  }
+
+  .attribution {
+    color: var(--clr-white);
+  }
+
+  .attribution > a {
+    color: var(--clr-red-400);
+  }
 }
