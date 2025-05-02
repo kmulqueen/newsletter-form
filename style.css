@@ -179,7 +179,7 @@ picture {
 
 .signup__button {
   color: var(--clr-white);
-  background-color: var(--clr-blue-800);
+  background: var(--clr-blue-800);
   padding: var(--spc-200) var(--spc-600);
   border: none;
   border-radius: var(--spc-100);
@@ -204,6 +204,8 @@ picture {
 
   main {
     padding: var(--spc-1000);
+    display: grid;
+    place-content: center;
   }
 
   .signup {
@@ -211,6 +213,11 @@ picture {
     max-width: 38rem;
     padding: var(--spc-500);
     border-radius: var(--spc-400);
+  }
+
+  .signup__image {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
   }
 
   .signup__hero {
@@ -236,5 +243,28 @@ picture {
 
   .attribution > a {
     color: var(--clr-red-400);
+  }
+}
+
+@media (min-width: 1200px) {
+  .signup {
+    max-width: 57rem;
+    grid:
+      "hero img"
+      "form img" / 1fr 1fr;
+
+    padding: var(--spc-400);
+    column-gap: var(--spc-800);
+  }
+
+  .signup__hero {
+    gap: var(--spc-400);
+    align-self: center;
+    padding: 0;
+  }
+
+  .signup__button:hover,
+  .signup__button:focus {
+    background: var(--clr-gradient);
   }
 }
