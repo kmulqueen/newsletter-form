@@ -231,6 +231,9 @@ picture {
 @media (min-width: 768px) {
   body {
     background-color: var(--clr-blue-700);
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    height: 100vh;
   }
 
   main {
@@ -268,6 +271,21 @@ picture {
     padding: 0;
   }
 
+  .success {
+    background-color: var(--clr-white);
+    grid-template-rows: repeat(4, auto);
+    padding: var(--spc-800);
+    border-radius: var(--spc-400);
+  }
+
+  .success__heading {
+    font-size: var(--fs-900);
+  }
+
+  .success__description {
+    margin-bottom: var(--spc-400);
+  }
+
   .attribution {
     color: var(--clr-white);
   }
@@ -295,8 +313,18 @@ picture {
   }
 
   .signup__button:hover,
-  .signup__button:focus {
+  .signup__button:focus,
+  .success__button:hover,
+  .success__button:focus {
     background: var(--clr-gradient);
+  }
+
+  main {
+    padding: var(--spc-1300);
+  }
+
+  .success {
+    max-width: 32rem;
   }
 }
 
