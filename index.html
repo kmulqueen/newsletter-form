@@ -17,7 +17,7 @@
   </head>
   <body>
     <main>
-      <section class="signup">
+      <section class="signup" id="signup">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -70,7 +70,12 @@
         </form>
       </section>
 
-      <article class="success hidden" aria-hidden="true" aria-live="polite">
+      <article
+        class="success hidden"
+        aria-hidden="true"
+        aria-live="polite"
+        id="success"
+      >
         <img
           src="./assets/images/icon-success.svg"
           alt="White checkmark with a orange and pink gradient background"
@@ -79,10 +84,14 @@
         <h1 class="success__heading">Thanks for subscribing!</h1>
         <p class="success__description">
           A confirmation email has been sent to
-          <span id="success-email">ash@loremcompany.com</span>. Please open it
-          and click the button inside to confirm your subscription.
+          <span class="success__email" id="success-email"
+            >ash@loremcompany.com</span
+          >. Please open it and click the button inside to confirm your
+          subscription.
         </p>
-        <button class="success__button">Dismiss message</button>
+        <button class="success__button" id="success-btn">
+          Dismiss message
+        </button>
       </article>
     </main>
 
