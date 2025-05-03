@@ -296,6 +296,10 @@ picture {
 }
 
 @media (min-width: 1200px) {
+  picture {
+    margin-bottom: 0;
+  }
+
   .signup {
     max-width: 57rem;
     grid:
